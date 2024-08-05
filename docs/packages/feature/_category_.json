@@ -1,0 +1,9 @@
+{
+  "label": "Feature",
+  "position": 4,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "Feature modules with business logic of the application. NestJS and NestJS-mod compatible modules."
+  }
+}

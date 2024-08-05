@@ -1,0 +1,9 @@
+{
+  "label": "Common",
+  "position": 1,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "A collection of utilities for unifying NestJS applications and modules."
+  }
+}
