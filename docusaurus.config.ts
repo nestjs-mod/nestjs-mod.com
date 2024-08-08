@@ -3,7 +3,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "NestJS-Mod",
+  title: "NestJS-mod",
   tagline:
     "A collection of utilities for unifying NestJS applications and modules.",
   favicon: "img/favicon.ico",
@@ -54,9 +54,9 @@ const config: Config = {
     sidebar: {
     },
     navbar: {
-      title: "NestJS-Mod",
+      title: "NestJS-mod",
       logo: {
-        alt: "NestJS-Mod",
+        alt: "NestJS-mod",
         src: "img/logo.svg",
       },
       items: [
@@ -128,7 +128,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} NestJS-Mod`,
+      copyright: `Copyright © ${new Date().getFullYear()} NestJS-mod`,
     },
     prism: {
       theme: prismThemes.github,
