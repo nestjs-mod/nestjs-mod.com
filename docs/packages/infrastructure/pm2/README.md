@@ -3,7 +3,7 @@
 
 Production process manager for Node.JS applications with a built-in load balancer for NestJS-mod (Generator ecosystem.config.json for https://www.npmjs.com/package/pm2)
 
-[![NPM version][npm-image]][npm-url] [![monthly downloads][downloads-image]][downloads-url] [![Telegram bot][telegram-image]][telegram-url]
+[![NPM version][npm-image]][npm-url] [![monthly downloads][downloads-image]][downloads-url] [![Telegram][telegram-image]][telegram-url] [![Discord][discord-image]][discord-url]
 
 ## Installation
 
@@ -138,6 +138,7 @@ Config file for start all built applications `ecosystem.config.json`
 * https://github.com/nestjs-mod/nestjs-mod/blob/master/apps/example-basic/INFRASTRUCTURE.MD - A simple example of infrastructure documentation.
 * https://github.com/nestjs-mod/nestjs-mod-contrib/blob/master/apps/example-prisma/INFRASTRUCTURE.MD - An extended example of infrastructure documentation with a docker-compose file and a data base.
 * https://dev.to/endykaufman/collection-of-nestjs-mod-utilities-for-unifying-applications-and-modules-on-nestjs-5256 - Article about the project NestJS-mod
+* https://habr.com/ru/articles/788916 - Коллекция утилит NestJS-mod для унификации приложений и модулей на NestJS
 
 
 ## License
@@ -148,5 +149,7 @@ MIT
 [npm-url]: https://npmjs.org/package/@nestjs-mod/pm2
 [telegram-image]: https://img.shields.io/badge/group-telegram-blue.svg?maxAge=2592000
 [telegram-url]: https://t.me/nestjs_mod
+[discord-image]: https://img.shields.io/badge/discord-online-brightgreen.svg
+[discord-url]: https://discord.gg/meY7UXaG
 [downloads-image]: https://badgen.net/npm/dm/@nestjs-mod/pm2
 [downloads-url]: https://npmjs.org/package/@nestjs-mod/pm2
