@@ -1,0 +1,9 @@
+{
+  "label": "Fullstack",
+  "position": 1,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "Шаблон для создания fullstack-приложения на NestJS и Angular."
+  }
+}

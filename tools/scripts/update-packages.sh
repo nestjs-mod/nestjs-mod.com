@@ -33,3 +33,15 @@ npx -y rucken@latest copy-paste --path=./tmp/nestjs-mod-contrib/libs/feature --f
 npx -y rucken@latest copy-paste --path=./tmp/nestjs-mod-contrib/libs/infrastructure --find=LICENSE --replace=LICENSE --dest-path=./docs/packages/infrastructure --glob-rules=**/LICENSE --extensions=*
 npx -y rucken@latest copy-paste --path=./tmp/nestjs-mod-contrib/libs/integration --find=LICENSE --replace=LICENSE --dest-path=./docs/packages/integration --glob-rules=**/LICENSE --extensions=*
 npx -y rucken@latest copy-paste --path=./tmp/nestjs-mod-contrib/libs/system --find=LICENSE --replace=LICENSE --dest-path=./docs/packages/system --glob-rules=**/LICENSE --extensions=*
+
+# nestjs-mod-fullstack
+rm -rf tmp/nestjs-mod-fullstack
+git clone https://github.com/nestjs-mod/nestjs-mod-fullstack.git tmp/nestjs-mod-fullstack
+
+rm -rf ./docs/ru-posts
+rm -rf ./docs/en-posts
+mkdir -p ./docs/ru-posts/fullstack
+mkdir -p ./docs/en-posts/fullstack
+npx -y rucken@latest copy-paste --path=./tmp/nestjs-mod-fullstack/steps --find=20 --replace=20 --dest-path=./docs/ru-posts/fullstack --glob-rules=**/ru.md --extensions=*
+npx -y rucken@latest copy-paste --path=./tmp/nestjs-mod-fullstack/steps --find=20 --replace=20 --dest-path=./docs/en-posts/fullstack --glob-rules=**/en.md --extensions=*
+./node_modules/.bin/ts-node --project ./tools/custom-tsconfig.json ./tools/fullstack-util.ts

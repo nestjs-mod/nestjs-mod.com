@@ -51,8 +51,7 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: "img/fon-nest.png",
-    sidebar: {
-    },
+    sidebar: {},
     navbar: {
       title: "NestJS-mod",
       logo: {
@@ -72,6 +71,20 @@ const config: Config = {
           sidebarId: "packagesSidebar",
           position: "left",
           label: "Packages",
+          collapsed: false,
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "enPostsSidebar",
+          position: "left",
+          label: "Posts",
+          collapsed: false,
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "ruPostsSidebar",
+          position: "left",
+          label: "Посты",
           collapsed: false,
         },
         {
@@ -135,6 +148,16 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      {
+        hashed: true,
+        language: ["en", "ru"],
+      },
+    ],
+  ],
 };
 
 export default config;
