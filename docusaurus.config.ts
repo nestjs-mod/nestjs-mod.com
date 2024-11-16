@@ -158,6 +158,17 @@ const config: Config = {
       },
     ],
   ],
+
+  plugins: [
+    [
+      "docusaurus-plugin-yandex-metrica",
+      {
+        counterID: "98948842",
+        webvisor: true,
+        trackHash: true,
+      },
+    ],
+  ],
 };
 
 export default config;
