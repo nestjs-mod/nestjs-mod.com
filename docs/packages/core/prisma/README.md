@@ -231,9 +231,9 @@ New scripts mostly `package.json`
     "prisma:migrate-dev-new:example-prisma": "./node_modules/.bin/nx run example-prisma:prisma-migrate-dev --create-only --name=new",
     "prisma:migrate-dev:example-prisma": "./node_modules/.bin/nx run example-prisma:prisma-migrate-dev --create-only",
     "prisma:migrate-deploy:example-prisma": "./node_modules/.bin/nx run example-prisma:prisma-migrate-deploy",
-    "prisma:migrate-deploy": "./node_modules/.bin/nx run-many --exclude=@nestjs-mod/contrib -t=prisma-migrate-deploy",
-    "prisma:pull": "./node_modules/.bin/nx run-many --exclude=@nestjs-mod/contrib -t=prisma-pull",
-    "prisma:generate": "./node_modules/.bin/nx run-many --exclude=@nestjs-mod/contrib -t=prisma-generate"
+    "prisma:migrate-deploy": "./node_modules/.bin/nx run-many -t=prisma-migrate-deploy",
+    "prisma:pull": "./node_modules/.bin/nx run-many -t=prisma-pull",
+    "prisma:generate": "./node_modules/.bin/nx run-many -t=prisma-generate"
   },
   "scriptsComments": {
     "prisma:pull": ["Generating a prisma schema based on a database"],
@@ -363,6 +363,7 @@ When launched in the infrastructure documentation generation mode, the module cr
 |`addMigrationScripts`|The option specifies whether it is necessary to create scripts to work with database migrations, for those who use third-party applications to create and apply migrations in the database (infrastructure, example: https://flywaydb.org, https://www.npmjs.com/package/db-migrate)|**optional**|```true```|-|
 |`customSchemaContent`|Unsafe string custom content for add to end of prisma schema file (infrastructure)|**optional**|-|-|
 |`binaryTargets`|Binary targets (infrastructure)|**optional**|-|-|
+|`previewFeatures`|Preview features (infrastructure)|**optional**|-|-|
 |`nxProjectJsonFile`|Application or library project.json-file (nx)|**optional**|-|-|
 
 [Back to Top](#modules)
