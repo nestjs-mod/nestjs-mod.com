@@ -2,6 +2,7 @@ const fg = require("fast-glob");
 const normalizePath_ = require("normalize-path");
 
 import { promises as fsPromises, rmdir, rmdirSync, rmSync } from "node:fs";
+import { readFile } from "node:fs/promises";
 import { basename, dirname } from "node:path";
 import { join } from "path";
 import * as writeFileAtomic from "write-file-atomic";
@@ -145,6 +146,29 @@ async function main() {
     "description": "Boilerplate for creating a fullstack application on NestJS and Angular."
   }
 }`
+  );
+
+  // replace bad symbol used in md grid
+  const content = (
+    await readFile(
+      join(
+        __dirname,
+        "..",
+        "docs/packages/infrastructure/docker-compose/README.md"
+      )
+    )
+  ).toString();
+  await writeFileAtomic(
+    join(
+      __dirname,
+      "..",
+      "docs/packages/infrastructure/docker-compose/README.md"
+    ),
+    content
+      .split("${MAILDEV_WEB_PORT}${MAILDEV_BASE_PATHNAME}")
+      .join("1080")
+      .split(" || exit 1")
+      .join("")
   );
 }
 
