@@ -23,6 +23,7 @@
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "docusaurus-plugin-yandex-metrica": "^1.2.1",
+    "libnpx": "^10.2.4",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
@@ -46,8 +47,5 @@
       "last 3 firefox version",
       "last 5 safari version"
     ]
-  },
-  "engines": {
-    "node": "22.11.0"
   }
 }
