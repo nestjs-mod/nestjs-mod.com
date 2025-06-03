@@ -44,4 +44,7 @@ mkdir -p ./docs/ru-posts/fullstack
 mkdir -p ./docs/en-posts/fullstack
 npx -y rucken@latest copy-paste --path=./tmp/nestjs-mod-fullstack/steps --find=20 --replace=20 --dest-path=./docs/ru-posts/fullstack --glob-rules=**/ru.md --extensions=*
 npx -y rucken@latest copy-paste --path=./tmp/nestjs-mod-fullstack/steps --find=20 --replace=20 --dest-path=./docs/en-posts/fullstack --glob-rules=**/en.md --extensions=*
+
+rm -rf docs/packages/feature/webhook-afat/src
+rm -rf docs/packages/feature/files-afat/src
 ./node_modules/.bin/ts-node --project ./tools/custom-tsconfig.json ./tools/fullstack-util.ts
